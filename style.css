@@ -3,15 +3,11 @@ body {
 }
 
 div.box {
-  position: relative;
+  position: absolute;
   visibility: hidden;
-  width: 40px;
-  height: 30px;
   position: absolute;
   top: 0px;
   left: 0px;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 div.txt {
