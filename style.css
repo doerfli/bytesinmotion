@@ -1,0 +1,50 @@
+body {
+  background-color: #000000;
+}
+
+div.box {
+  position: relative;
+  visibility: hidden;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+div.txt {
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Source Code Pro';
+/*  color: #0000FF;*/
+}
+
+.signblue {
+  color: #003F87;
+}
+
+.bluespider {
+  color: #26466D;
+}
+
+.alaskasky {
+  color: #1B3F8B
+}
+
+.bluevelvet {
+  color: #162252
+}
+
+.delft {
+  color: #22316C
+}
+
+.midnightblue {
+  color: #2F2F4F
+}
+
+.royalblue4 {
+  color: #27408B
+}
