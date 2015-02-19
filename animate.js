@@ -2,15 +2,21 @@
 var shadesOfBlue = [ "signblue" , "bluespider", "alaskasky", "bluevelvet", "delft", "midnightblue", "royalblue4"];
 // the number of the current element
 var numEl = 0;
-
+var numStacks = 30; // number of stacks to begin with
+var minBlockWidth = 30;
+  
 $(document).ready(function() {
   
   var width = window.innerWidth;
   var height = window.innerHeight;
 
-  // width => 30 stacks
   // aspect ratio ~ 4:3
-  var blockwidth = Math.floor( width / 30); // px 
+  var blockwidth = Math.floor( width / numStacks); // px 
+  if ( blockwidth < minBlockWidth ) 
+  {
+    blockwidth = minBlockWidth;
+    numStacks = Math.floor( width / blockwidth);
+  }
   var blockheight = Math.floor( blockwidth / 4 * 3); // px 
   console.log( "blockwidth: " + blockwidth + " x " + blockheight);
 
