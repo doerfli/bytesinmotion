@@ -1,5 +1,6 @@
 // class names for blue text
 var shadesOfBlue = [ "signblue" , "bluespider", "alaskasky", "bluevelvet", "delft", "midnightblue", "royalblue4"];
+var easings = ["easeOutCubic", "easeOutQuart", "easeOutQuad", "easeOutQuint"]
 // the number of the current element
 var numEl = 0;
 var numStacks = 30; // number of stacks to begin with
@@ -47,11 +48,13 @@ $(document).ready(function() {
     console.log( "float to gridx: " + x + " gridy: " + y);
     var posx = x * blockwidth;
     var posy = height - ((y + 1) * blockheight) - 10; // stop just above screen bottom
-
+    
+    var easing = easings[Math.floor( Math.random() * easings.length)];
+    
     // now move the block
     box.animate(
       {left: posx+"px", top: posy+"px"},
-      { duration: 3000 }
+      { duration: 3000, easing: 'easeOutCubic' }
     );
   }
 
