@@ -1,0 +1,69 @@
+body {
+  overflow:hidden;
+}
+
+.byte {
+  font-family: 'Nova Mono', monospace;
+  font-size: 44px;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.moveToTop {
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+
+  transform: translate(0px, -2000px) rotateY(360deg);
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1000;
+}
+
+.moveToBottom {
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+
+  transform: translate(0px, 2000px) rotateY(360deg);
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1000;
+}
+
+
+.moveToLeft {
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+
+  transform: translate(-2000px) rotateY(360deg);
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1000;
+}
+
+.moveToRight {
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
+
+  transform: translate(2000px) rotateY(360deg);
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1000;
+}
+
+
